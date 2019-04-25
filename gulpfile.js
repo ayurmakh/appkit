@@ -9,6 +9,11 @@ gulp.task('sass', function(){ // Ñîçäàåì òàñê Sass
         .pipe(browserSync.reload({stream: true})) // Îáíîâëÿåì CSS íà ñòðàíèöå ïðè èçìåíåíèè
 });
 
+gulp.task('scripts', function(){ 
+    return gulp.src('app/js/script.js')
+        .pipe(browserSync.reload({stream: true})) 
+});
+
 gulp.task('code', function() {
     return gulp.src('app/*.html')
     .pipe(browserSync.reload({ stream: true }))
@@ -24,6 +29,7 @@ gulp.task('browser-sync', function() { // Ñîçäàåì òàñê browser-sync
 });
 
 gulp.task('watch', function() {
+     gulp.watch('app/js/script.js', gulp.parallel('scripts')); 
     gulp.watch('app/sass/**/*.sass', gulp.parallel('sass')); // Íàáëþäåíèå çà sass ôàéëàìè
     gulp.watch('app/*.html', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
 });

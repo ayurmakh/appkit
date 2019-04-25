@@ -1,2 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+  *:before, *:after {
+    box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
 body {
-  background-color: black; }
+  font-size: 15px;
+  font-family: 'Open sans', 'Arial', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.main_header {
+  position: relative;
+  z-index: 200; }
+
+.slider {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 560px; }
+
+.slide1 {
+  position: absolute;
+  top: 0;
+  background-image: url("../img/hero-1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3 ease; }
+
+.slide2 {
+  position: absolute;
+  top: 0;
+  background-image: url("../img/hero-2.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3 ease; }
+
+.slide3 {
+  position: absolute;
+  top: 0;
+  background-image: url("../img/hero-3.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3 ease; }
+
+.show {
+  opacity: 1; }
+
+.slider_button {
+  position: relative;
+  z-index: 100; }
+
+/* Small Devices, Tablets */
+@media (max-width: 768px) {
+  .slider {
+    height: 600px; } }
