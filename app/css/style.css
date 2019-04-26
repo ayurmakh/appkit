@@ -14,10 +14,42 @@ body {
 
 a {
   text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
 
 .main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%;
+  padding-top: 10px; }
+
+.main_logo {
+  color: #fff;
+  font-size: 26px;
+  padding-left: 140px; }
+  .main_logo span {
+    font-weight: 900; }
+
+.main_logo_img {
+  width: 30px;
+  margin-top: -5px; }
+
+.main_nav {
+  padding-right: 130px; }
+
+.main_nav_element {
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 30px;
+  color: #cdced1; }
+  .main_nav_element:hover {
+    color: #fff; }
+
+.main_nav_element_active {
+  color: #fff; }
 
 .slider {
   position: relative;
@@ -25,6 +57,15 @@ a {
   height: 560px;
   display: flex;
   align-items: flex-end; }
+
+.slider_text {
+  color: #fff;
+  padding-left: 140px;
+  padding-top: 120px; }
+
+.slider_text_header {
+  font-size: 30px;
+  font-weight: 700; }
 
 #slide1 {
   position: absolute;
