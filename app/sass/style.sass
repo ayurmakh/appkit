@@ -1,39 +1,46 @@
 @import "base"
 @import "vars"
+@import "fonts"
+
+.main_header_wrapper
+	position: fixed
+	left: 0
+	right: 0
+	z-index: 1
 
 .main_header
 	display: flex
 	justify-content: space-between	
 	align-items: center
-	position: fixed
-	z-index: 200
-	width: 100%
-	padding-top: 10px
+	width: 1100px
+	margin: 10px auto 0 auto
 		
+.scrolled
+	background-color: #fff
+	
+
 .main_logo
 	color: #fff
-	font-size: 26px
-	padding-left: 140px
+	font-size: 28px
 	span
 		font-weight: 900
+	&:hover
+		color: #fff
 
 .main_logo_img
 	width: 30px
 	margin-top: -5px
 
-.main_nav
-	padding-right: 130px
-
 .main_nav_element
-	font-size: 15px
+	font-size: 14px
 	font-weight: 700
-	margin-right: 30px
+	margin-left: 38px
 	color: $nav_color
 	&:hover
 		color: #fff
 
 .main_nav_element_active
-	color: #fff
+	color: #000
 
 .slider
 	position: relative
@@ -41,20 +48,44 @@
 	height: 560px
 	display: flex
 	align-items: flex-end
+	
 
-.slider_text
+.slider_responsive
+	width: 1100px
+	display: flex
+	justify-content: space-between	
+	margin: 120px auto 0 auto
+
+.slider_content
+	width: 510px
 	color: #fff
-	padding-left: 140px
-	padding-top: 120px
+	z-index: 2
+	h2
+		font-weight: 700
+		font-size: 30px
+		line-height: 1.4
+	p
+		font-size: 18px
+		font-weight: 600
+		margin-top: 15px
 
-.slider_text_header
-	font-size: 30px
-	font-weight: 700
-
-
-.slider_text_content
-
-
+.button
+	background-color: $accent
+	border: none
+	color: #fff
+	margin-top: 14px
+	padding: 11px 30px
+	border-radius: 4px
+	font-weight: 800
+	font-size: 16px
+	transition: background-color 0.5s ease
+	&:hover
+		background-color: darken($accent, 5%)
+	&:active
+		background-color: $science_blue
+		border: 3px solid #407dbb
+		margin-top: 11px
+		margin-left: -3px
 
 #slide1
 	position: absolute
@@ -93,10 +124,9 @@
 	opacity: 1 !important
 
 .buttons
-	position: relative
-	z-index: 100
+	z-index: 2
 	margin: 0 auto
-	margin-bottom: 35px
+	margin-bottom: 30px
 	display: flex
 
 .slider_button
@@ -104,12 +134,24 @@
 	width: 11px
 	height: 11px
 	background-color: $spanish_gray
-	margin-right: 10px
+	margin-right: 8px
 
 	&:hover
 		cursor: pointer
 
 .slider_button_active
 	background-color: $accent
+
+.main_imac_wrapper
+	position: absolute
+	right: 0
+	left: 0
+	width: 570px
+	margin: 0 auto
+
+.main_imac
+	margin-left: 270px
+
+
 
 @import "media"
