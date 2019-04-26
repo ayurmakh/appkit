@@ -16,16 +16,17 @@ a {
   text-decoration: none; }
 
 .main_header {
-  position: relative;
+  position: fixed;
   z-index: 200; }
 
 .slider {
-  position: absolute;
-  top: 0;
+  position: relative;
   width: 100%;
-  height: 560px; }
+  height: 560px;
+  display: flex;
+  align-items: flex-end; }
 
-.slide1 {
+#slide1 {
   position: absolute;
   top: 0;
   background-image: url("../img/hero-1.jpg");
@@ -33,10 +34,10 @@ a {
   background-position: center;
   width: 100%;
   height: 100%;
-  opacity: 1;
-  transition: opacity 0.3 ease; }
+  opacity: 0;
+  transition: opacity .5s ease-out; }
 
-.slide2 {
+#slide2 {
   position: absolute;
   top: 0;
   background-image: url("../img/hero-2.jpg");
@@ -44,10 +45,10 @@ a {
   background-position: center;
   width: 100%;
   height: 100%;
-  opacity: 1;
-  transition: opacity 0.3 ease; }
+  opacity: 0;
+  transition: opacity .5s ease-out; }
 
-.slide3 {
+#slide3 {
   position: absolute;
   top: 0;
   background-image: url("../img/hero-3.jpg");
@@ -55,15 +56,30 @@ a {
   background-position: center;
   width: 100%;
   height: 100%;
-  opacity: 1;
-  transition: opacity 0.3 ease; }
+  opacity: 0;
+  transition: opacity .5s ease-out; }
 
 .show {
-  opacity: 1; }
+  opacity: 1 !important; }
+
+.buttons {
+  position: relative;
+  z-index: 100;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  display: flex; }
 
 .slider_button {
-  position: relative;
-  z-index: 100; }
+  border-radius: 8px;
+  width: 11px;
+  height: 11px;
+  background-color: #929799;
+  margin-right: 10px; }
+  .slider_button:hover {
+    cursor: pointer; }
+
+.slider_button_active {
+  background-color: #40babd; }
 
 /* Small Devices, Tablets */
 @media (max-width: 768px) {
