@@ -45,21 +45,26 @@ a {
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 1; }
+  z-index: 3; }
 
 .main_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
   width: 1100px;
-  margin: 10px auto 0 auto; }
+  margin: 0 auto; }
 
 .scrolled {
   background-color: #fff; }
+  .scrolled p {
+    color: #000; }
 
 .main_logo {
   color: #fff;
-  font-size: 28px; }
+  font-size: 28px;
+  display: flex;
+  margin-top: 15px; }
   .main_logo span {
     font-weight: 900; }
   .main_logo:hover {
@@ -67,9 +72,11 @@ a {
 
 .main_logo_img {
   width: 30px;
-  margin-top: -5px; }
+  margin-bottom: 15px;
+  margin-right: 10px; }
 
 .main_nav_element {
+  position: relative;
   font-size: 14px;
   font-weight: 700;
   margin-left: 38px;
@@ -79,6 +86,15 @@ a {
 
 .main_nav_element_active {
   color: #000; }
+  .main_nav_element_active:after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: -10%;
+    width: 120%;
+    height: 3px;
+    background-color: #40babd;
+    opacity: 1; }
 
 .slider {
   position: relative;
@@ -187,6 +203,52 @@ a {
 
 .main_imac {
   margin-left: 270px; }
+
+.section_why {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px; }
+  .section_why h1 {
+    font-size: 35px;
+    font-weight: 300; }
+
+.section_why_descr {
+  width: 760px;
+  text-align: center;
+  font-size: 16px;
+  color: #a2a6b1;
+  margin-top: 5px; }
+
+.section_why_brands {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 460px; }
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  width: 1045px; }
+
+.benefit {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .benefit h2 {
+    color: #40babd;
+    font-size: 18px;
+    font-weight: 700; }
+  .benefit p {
+    font-size: 14px;
+    color: #616670; }
+
+.benefit_img {
+  height: 200px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
