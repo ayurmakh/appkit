@@ -1,5 +1,7 @@
 buttons = $('.slider_button');
 slides = $('.slide');
+feature_slieds = $('.feature_slide');
+feature_list = $('.feature_list li');
 
 $('.slider_button').click(function() {
 	changeSlide(this);	
@@ -38,9 +40,24 @@ setInterval(function() {
 
 $(window).scroll(function() {
 	var bo = $(this).scrollTop();
-	console.log(bo);
 	if (bo > 1)
 		$('.main_header_wrapper').addClass('scrolled');
 	else
 		$('.main_header_wrapper').removeClass('scrolled');
 });
+
+$('.feature_list li').click(function() {
+	changeFeatureSlid(this);	
+});
+
+function changeFeatureSlid(list) {	
+	focusIndex = 0;
+	for (var i = 0; i < feature_list.length; i++) {
+		$(feature_list[i]).removeClass('feature_list_active');
+		$(feature_slieds[i]).removeClass('feature_slide_active');
+		if (list == feature_list[i])
+			focusIndex = i + 1;
+	}
+	$(list).addClass('feature_list_active');
+	$('#feature_slide' + focusIndex).addClass('feature_slide_active');	
+}

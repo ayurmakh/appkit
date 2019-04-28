@@ -187,9 +187,8 @@ a {
   width: 11px;
   height: 11px;
   background-color: #929799;
-  margin-right: 8px; }
-  .slider_button:hover {
-    cursor: pointer; }
+  margin-right: 8px;
+  cursor: pointer; }
 
 .slider_button_active {
   background-color: #40babd; }
@@ -249,6 +248,204 @@ a {
 
 .benefit_img {
   height: 200px; }
+
+.section_customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  width: 100%;
+  background: #40babd url("../img/map.png") no-repeat center;
+  background-size: cover; }
+  .section_customers h1 {
+    font-size: 35px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 10px; }
+
+.customer {
+  display: flex;
+  width: 745px;
+  margin-top: 50px; }
+
+.customer_img_wrapper img {
+  width: 80px; }
+
+.customer_blockquote {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.18);
+  padding: 30px 60px 10px 25px;
+  border-radius: 4px; }
+  .customer_blockquote p {
+    color: #fff;
+    font-size: 14px; }
+  .customer_blockquote .customer_profile_name {
+    color: #000; }
+
+.right {
+  margin-left: 30px; }
+  .right:before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: -20px;
+    border: 10px solid transparent;
+    border-right: 10px solid rgba(0, 0, 0, 0.18); }
+
+.left {
+  margin-right: 30px; }
+  .left:before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 100%;
+    border: 10px solid transparent;
+    border-left: 10px solid rgba(0, 0, 0, 0.18);
+    z-index: 0; }
+
+.section_features {
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section_features h1 {
+    font-size: 35px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 10px; }
+
+.section_features_descr {
+  text-align: center; }
+
+.feature_slider_wrapper {
+  display: flex;
+  width: 1100px;
+  margin-top: 50px; }
+
+.feature_slider {
+  width: 700px;
+  position: relative; }
+
+.feature_slide {
+  position: absolute;
+  opacity: 0;
+  transition: opacity .3s ease; }
+
+.feature_slide_active {
+  opacity: 1; }
+
+.feature_slide_active {
+  opacity: 1; }
+
+.feature_list {
+  margin-left: 50px;
+  font-size: 16px; }
+  .feature_list li {
+    margin-top: 35px;
+    list-style: none;
+    cursor: pointer;
+    transition: color 0.5s ease; }
+    .feature_list li:hover {
+      color: #40babd; }
+
+.feature_list_active {
+  font-weight: 700;
+  color: #40babd; }
+
+.fas {
+  margin-right: 10px; }
+
+.section_team {
+  background-color: #f5f5f5;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section_team h1 {
+    font-size: 35px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 10px; }
+
+.section_team_descr {
+  width: 800px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px; }
+
+.team_member_wrapper {
+  margin-top: 70px;
+  width: 780px;
+  display: flex;
+  justify-content: space-between; }
+
+.team_member {
+  width: 375px;
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 30px 50px 30px; }
+  .team_member img {
+    width: 120px; }
+  .team_member p {
+    font-size: 14px;
+    margin-top: 30px; }
+  .team_member h3 {
+    color: #40babd;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px; }
+  .team_member h4 {
+    font-size: 16px;
+    margin-top: 10px; }
+  .team_member a {
+    color: #40babd; }
+    .team_member a:hover {
+      text-decoration: underline; }
+
+.team_member_icons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px; }
+  .team_member_icons .fas, .team_member_icons .fab {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 6px; }
+
+.icons_left {
+  width: 200px; }
+
+.icons_right {
+  width: 120px; }
+
+.globe {
+  background-color: #75babd; }
+  .globe .fas {
+    margin-left: 6.2px; }
+
+.dribbble {
+  background-color: #ec4d8b; }
+
+.github {
+  background-color: #444; }
+
+.facebook {
+  background-color: #3b5998; }
+
+.twitter {
+  background-color: #58bbee; }
+
+.medium {
+  background-color: #000; }
+
+.team_member_icon_circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
